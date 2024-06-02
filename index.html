@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tapera</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <meta
+      name="description"
+      content="BP Tapera - Layanan Kepesertaan untuk Peserta dan Pemberi Kerja"
+    />
+    <meta
+      name="keywords"
+      content="BP Tapera, Layanan Kepesertaan, Peserta, Pemberi Kerja"
+    />
+    <meta name="author" content="BP Tapera" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="bg-gray-100">
+    <header class="bg-white shadow py-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <div class="flex items-center space-x-4">
+          <img src="assets/Asset7.svg" alt="BP Tapera Logo" class="h-11" />
+          <a href="#" class="text-xl font-bold text-gray-800 header-text"
+            >BP TAPERA</a
+          >
+        </div>
+        <button
+          id="menu-toggle"
+          class="md:hidden focus:outline-none"
+          aria-label="Toggle Menu"
+          aria-expanded="false"
+          aria-controls="dropdown-menu"
+        >
+          <i
+            id="menu-icon"
+            class="fas fa-bars text-gray-700 text-2xl"
+            aria-hidden="true"
+          ></i>
+        </button>
+        <nav id="menu" class="hidden md:flex space-x-4">
+          <a class="text-gray-700 hover:text-green-600 nav-link" href="#"
+            >Home</a
+          >
+          <a
+            class="text-gray-700 hover:text-green-600 nav-link"
+            href="https://sitara.tapera.go.id/"
+            >Original Web</a
+          >
+          <a
+            class="text-gray-700 hover:text-green-600 nav-link"
+            href="https://www.nojin.site/"
+            >Creator</a
+          >
+        </nav>
+      </div>
+      <div
+        id="dropdown-menu"
+        class="hidden md:hidden bg-white shadow-lg rounded mt-2 py-2 absolute w-full z-10"
+      >
+        <a
+          class="block px-4 py-2 text-gray-700 hover:text-green-600 nav-link"
+          href="#"
+          >Home</a
+        >
+        <a
+          class="block px-4 py-2 text-gray-700 hover:text-green-600 nav-link"
+          href="#"
+          >Original Web</a
+        >
+        <a
+          class="block px-4 py-2 text-gray-700 hover:text-green-600 nav-link"
+          href="#"
+          >Creator</a
+        >
+      </div>
+    </header>
+    <main
+      class="flex flex-col items-center justify-center min-h-screen bg-gray-100"
+    >
+      <section class="py-12">
+        <div class="container mx-auto">
+          <div class="text-center mb-8">
+            <h2 class="text-4xl font-bold text-green-500">
+              Layanan Kepesertaan
+            </h2>
+            <p class="text-lg text-gray-600">
+              Silahkan masuk sesuai akun layanan kepesertaan BP TAPERA
+            </p>
+          </div>
+          <div class="flex flex-wrap justify-center">
+            <div class="w-full md:w-1/2 lg:w-1/3 p-4">
+              <div
+                class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition"
+              >
+                <h5 class="text-xl font-bold text-gray-800 mb-2">
+                  <i
+                    class="fas fa-user mr-2 text-yellow-500"
+                    aria-hidden="true"
+                  ></i
+                  >Peserta
+                </h5>
+                <p class="text-gray-600 mb-4">
+                  Layanan bagi Peserta untuk melihat informasi data kepesertaan
+                  Tapera
+                </p>
+                <a
+                  href="https://sitara.tapera.go.id/peserta/login"
+                  class="block bg-yellow-500 text-white text-center py-2 rounded hover:bg-yellow-600 transition"
+                  >Masuk</a
+                >
+                <p class="mt-4 text-gray-600">
+                  Registrasi akses anda
+                  <a
+                    href="https://sitara.tapera.go.id/registrasi"
+                    class="text-blue-500 underline"
+                    >disini</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="flex w-full md:w-1/2 lg:w-1/3 p-4">
+              <div
+                class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition"
+              >
+                <h5 class="text-xl font-bold text-gray-800 mb-2">
+                  <i
+                    class="fas fa-briefcase mr-2 text-green-500"
+                    aria-hidden="true"
+                  ></i
+                  >Pemberi Kerja
+                </h5>
+                <p class="text-gray-600 mb-4 flex-nowrap">
+                  Layanan bagi Pemberi Kerja untuk mengelola data Peserta dan
+                  Informasi Pembayaran Simpanan
+                </p>
+                <a
+                  href="https://sitara.tapera.go.id/pemberi-kerja/login"
+                  class="block bg-green-500 text-white text-center py-2 rounded hover:bg-green-600 mb-4 transition"
+                  >Masuk</a
+                >
+              </div>
+            </div>
+          </div>
+          <p class="mt-8 text-center text-gray-600">
+            Cek apakah Anda sudah terdaftar sebagai peserta TAPERA
+            <a
+              href="https://sitara.tapera.go.id/check"
+              class="text-blue-500 underline"
+              >disini</a
+            >
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-gray-800 text-white py-8">
+      <div class="container mx-auto text-center md:text-left">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div>
+            <h3 class="text-lg font-bold mb-2">Contact Us</h3>
+            <p>Call Center: 021-156</p>
+            <p>
+              Email:
+              <a
+                href="mailto:layanan@tapera.go.id"
+                class="text-blue-400 hover:text-blue-500"
+                >layanan@tapera.go.id</a
+              >
+            </p>
+            <p>WhatsApp: 08118 156 156</p>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold mb-2">Quick Links</h3>
+            <ul>
+              <li>
+                <a href="#" class="hover:text-blue-400"
+                  >Home <i class="fas fa-angle-right"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://sitara.tapera.go.id/" class="hover:text-blue-400"
+                  >Original Website <i class="fas fa-angle-right"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.nojin.site/" class="hover:text-blue-400"
+                  >Creator <i class="fas fa-angle-right"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="mt-8 border-t border-gray-700 pt-4">
+          <p class="text-sm">
+            This is a re-create website for education, thanks.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>

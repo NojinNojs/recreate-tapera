@@ -1,0 +1,136 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+  }
+  
+  header .logo {
+    height: 40px;
+  }
+
+  .header-text {
+    cursor: pointer;
+    position: relative;
+    transition: color 0.3s;
+  }
+  .header-text:hover {
+    color: #5cb248;
+  }
+  .header-text:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #5cb248;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+
+  .header-text:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  .nav-link {
+    position: relative;
+    transition: color 0.3s;
+  }
+  
+  .nav-link:hover {
+    color: #5cb248;
+  }
+  
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #5cb248;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .nav-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  main {
+    background-color: #f8f9fa;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    display: flex;
+  }
+  
+  .hero {
+    background-color: #f8f9fa;
+  }
+  
+  .card {
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-title i {
+    margin-right: 0.5rem;
+    color: #007bff;
+  }
+  
+  footer {
+    background-color: #fff;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Animation for slide down */
+  @keyframes slide-down {
+    0% {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slide-up {
+    0% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+  }
+  
+  .animate-slide-down {
+    animation: slide-down 0.3s ease-out;
+  }
+  
+  .animate-slide-up {
+    animation: slide-up 0.3s ease-out;
+  }
+  
+
+  @media (max-width: 768px) {
+    header .container {
+      padding: 0 20px;
+      flex-direction: row;
+    }
+  
+    .hero {
+      text-align: center;
+    }
+  }
+  
